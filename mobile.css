@@ -149,6 +149,7 @@
         cursor: pointer;        
         font-weight: bold;
         align-items: baseline;
+        color: var(--text);
     }
 
     .inhalt__mobil-header__nav__button > * {
