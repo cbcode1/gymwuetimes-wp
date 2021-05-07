@@ -1,0 +1,25 @@
+@media only print {
+    .seitenleiste {
+        display: none;
+    }
+
+    .inhalt {
+        margin: 2rem;
+    }
+
+    .artikel__text {
+        display: block;
+    }
+    .artikel__content {
+        line-height: 1.5;
+        font-size: 11pt;
+    }
+    .artikel__rand {
+        padding: 0;
+        margin: 1rem 0 0 0;
+    }
+
+    .kommentare {
+        display: none;
+    }
+}
