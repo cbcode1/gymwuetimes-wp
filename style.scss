@@ -3,7 +3,7 @@ Theme Name: GymWue Times
 Author: Constantin Birken
 Author URI: https://gymwuetimes.de/author/constantin
 Description: Das offizielle WordPress-Theme für die Schülerzeitung des Gymnasiums der Stadt Würselen.
-Version: 1.1.6
+Version: 1.1.7
 Tags: Schülerzeitung, Aktuelles, Blog, Raster
 GitHub Theme URI: cbcode1/gymwuetimes-wp
 */
@@ -114,6 +114,7 @@ figure {
     &__logo {
         width: 100%;
         align-self: center;
+        height: 100% !important;
     }
 
     &__suche {
@@ -333,11 +334,14 @@ figure {
         transition: background-color 0.2s, box-shadow 0.2s;
 
         &:hover, &:active {
-            background-color: var(--akzent);
             box-shadow: 0 0 1.5rem var(--schatten);
 
             i {
                 transform: translateX(5px);
+            }
+
+            &::after {
+                bottom: 0;
             }
         }
 
@@ -351,6 +355,18 @@ figure {
             object-fit: cover;
             border-bottom: 2px solid var(--akzent);
             background-color: var(--akzent);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 12rem;
+            bottom: 100%;
+            left: 0;
+            right: 0;
+            background-color: var(--akzent);
+
+            transition: bottom 0.35s ease;
         }
     }
 
@@ -1300,6 +1316,7 @@ figure {
         flex-direction: column !important;
     }
 
+    right: 0 !important;
     width: auto !important;
     border-top: 3px solid var(--akzent);
     background-color: var(--hintergrund) !important;
