@@ -14,7 +14,8 @@ GitHub Theme URI: cbcode1/gymwuetimes-wp
 .inhalt__mobil-header__menu-button, .ressorts a, 
 .comment-reply-title a, .archiv__auswahl, .archiv__auswahl option,
 .ausgabenliste__button, .wp-block-button__link, th,
-.artikel__seitenleiste, .artikel__seitenleiste * {
+.artikel__seitenleiste, .artikel__seitenleiste *,
+.cli-bar-btn_container {
     font-family: 'Poppins', sans-serif;
 }
 .font2, * {
@@ -360,7 +361,7 @@ figure {
         &::after {
             content: "";
             position: absolute;
-            top: 12rem;
+            top: 0;
             bottom: 100%;
             left: 0;
             right: 0;
@@ -1262,6 +1263,19 @@ figure {
             }
         }
 
+        .wpcf7-acceptance {
+            border: none;
+            background: none;
+
+            .wpcf7-list-item {
+                margin: 0;
+
+                &-label {
+                    font-weight: normal;
+                }
+            }
+        }
+
         .wpcf7-textarea {
             resize: vertical;
         }
@@ -1330,6 +1344,8 @@ figure {
     }
 
     .cli-bar-btn_container {
+        font-size: 1rem;
+
         a {
             width: max-content !important;
             color: var(--text) !important;
