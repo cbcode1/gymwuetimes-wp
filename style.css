@@ -4,7 +4,7 @@ Theme Name: GymWue Times
 Author: Constantin Birken
 Author URI: https://gymwuetimes.de/author/constantin
 Description: Das offizielle WordPress-Theme für die Schülerzeitung des Gymnasiums der Stadt Würselen.
-Version: 1.1.7
+Version: 2.0.0
 Tags: Schülerzeitung, Aktuelles, Blog, Raster
 GitHub Theme URI: cbcode1/gymwuetimes-wp
 */
@@ -53,6 +53,7 @@ body {
 
 a {
   color: var(--text);
+  text-decoration: none;
 }
 
 pre, code {
@@ -64,7 +65,6 @@ figure {
 }
 
 figure figcaption {
-  color: var(--text);
   font-size: 0.8rem;
   text-align: center;
   margin: 0;
@@ -101,7 +101,6 @@ figure figcaption {
   font-size: 1.1rem;
   padding: 0.75rem;
   transition: position 0.2s;
-  color: var(--text);
 }
 
 .seitenleiste__umschalten i {
@@ -177,7 +176,6 @@ figure figcaption {
 .seitenleiste__nav__liste a {
   display: block;
   padding: 20px calc(1rem + 22px);
-  color: var(--text);
   text-decoration: none;
 }
 
@@ -277,7 +275,6 @@ figure figcaption {
   display: inline-block;
   border: 2px solid var(--grau);
   margin: 0 1rem 1rem 0;
-  color: var(--text);
   transition: 0.2s;
 }
 
@@ -318,7 +315,6 @@ figure figcaption {
 
 .artikelliste__link {
   text-decoration: none;
-  color: var(--text);
 }
 
 .artikelliste__kasten {
@@ -469,7 +465,6 @@ figure figcaption {
   text-align: center;
   font-size: 2.5rem;
   margin: 0 0 2rem 0;
-  color: var(--text);
 }
 
 .artikel__foto {
@@ -486,7 +481,6 @@ figure figcaption {
 }
 
 .artikel__foto__bildnachweis {
-  color: var(--text);
   font-size: 0.8rem;
   text-align: center;
   margin: 0.5rem 0 0 0;
@@ -500,7 +494,6 @@ figure figcaption {
 
 .artikel__content {
   line-height: 1.75;
-  color: var(--text);
   flex: 75%;
 }
 
@@ -592,17 +585,18 @@ figure figcaption {
 }
 
 .wp-block-button {
-  margin: 0 1rem 1rem 0;
+  margin: 0 !important;
 }
 
 .wp-block-button__link, .wp-block-button .wp-block-file__button {
   background-color: var(--akzent);
+  color: var(--text);
   border: 2px solid var(--akzent) !important;
   border-radius: 0;
-  padding: 0.75rem 1.5rem;
-  color: var(--text);
+  padding: 0.75rem 1.5rem !important;
   transition: 0.2s;
   font-size: 1rem;
+  margin: 0 1rem 1rem 0;
 }
 
 .wp-block-button__link:hover, .wp-block-button .wp-block-file__button:hover {
@@ -611,12 +605,12 @@ figure figcaption {
   color: var(--text);
 }
 
-.wp-block-button__link:active, .wp-block-button .wp-block-file__button:active {
-  background-color: var(--akzent);
-}
-
 .wp-block-button.is-style-outline .wp-block-button__link {
   background: none;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:active {
+  background-color: var(--akzent);
 }
 
 .wp-block-quote.is-style-default {
@@ -669,7 +663,6 @@ figure figcaption {
 
 .kommentare {
   display: block;
-  color: var(--text);
   position: relative;
   padding-top: 2rem;
 }
@@ -745,12 +738,10 @@ figure figcaption {
 .kommentare .comment-author .fn {
   font-style: normal;
   font-weight: bold;
-  color: var(--text);
 }
 
 .kommentare .comment-author .fn .url {
   text-decoration: none;
-  color: var(--text);
   transition: 0.2s;
 }
 
@@ -768,7 +759,6 @@ figure figcaption {
 
 .kommentare .comment-meta a {
   text-decoration: none;
-  color: var(--text);
   font-size: 0.8rem;
   margin: 0;
 }
@@ -776,10 +766,6 @@ figure figcaption {
 .kommentare .comment-body p {
   margin: 0 0 0.5rem 0;
   line-height: 1.6;
-}
-
-.kommentare .comment-body a {
-  color: var(--text);
 }
 
 .kommentare .comment-reply-link {
@@ -801,17 +787,8 @@ figure figcaption {
   font-size: 1.25rem;
 }
 
-.kommentare .comment-reply-title a {
-  color: var(--text);
-}
-
 .kommentare .logged-in-as {
   margin: 0;
-}
-
-.kommentare .logged-in-as a {
-  color: var(--text);
-  text-decoration: none;
 }
 
 .kommentare .logged-in-as a:last-of-type {
@@ -928,13 +905,11 @@ figure figcaption {
 
 .autor__name {
   margin: 0;
-  color: var(--text);
   font-size: 2rem;
 }
 
 .autor__beschreibung {
   margin: 0 0 1rem 0;
-  color: var(--text);
 }
 
 .vierhundertvier {
@@ -947,24 +922,20 @@ figure figcaption {
 
 .vierhundertvier__ueberschrift {
   font-size: 4rem;
-  color: var(--text);
   margin: 0;
 }
 
 .vierhundertvier__beschreibung {
-  color: var(--text);
   margin: 0;
   text-align: center;
 }
 
 .suche__suchbegriff {
   margin: 0 0 0.25rem 0;
-  color: var(--text);
 }
 
 .suche__anzahl-ergebnisse {
   margin: 0 0 2rem 0;
-  color: var(--text);
 }
 
 .customize-support .vierhundertvier {
@@ -989,7 +960,6 @@ figure figcaption {
 
 .archiv__archivleiste__ueberschrift {
   margin: 2rem 0 0 calc(1rem + 22px);
-  color: var(--text);
 }
 
 @media only screen and (min-width: 1440px) {
@@ -1027,7 +997,6 @@ figure figcaption {
   padding: 0;
   margin: 0 auto;
   max-width: 800px;
-  color: var(--text);
 }
 
 .ausgabenliste * {
@@ -1136,7 +1105,6 @@ figure figcaption {
   display: flex;
   justify-content: center !important;
   align-items: center !important;
-  color: var(--text);
   position: relative;
   margin: -2rem -4rem 1rem -4rem;
   padding: 2rem 4rem 2rem 4rem;
@@ -1180,7 +1148,6 @@ figure figcaption {
 .ausgabe__header__datum {
   margin: 0;
   font-weight: bold;
-  color: var(--text);
   font-size: 1.1rem;
   line-height: 1;
 }
@@ -1190,17 +1157,16 @@ figure figcaption {
 }
 
 .ausgabe__header__button:first-of-type {
-  background-color: var(--hintergrund);
-  border: 2px solid var(--hintergrund);
+  background-color: var(--text);
+  color: var(--hintergrund);
 }
 
 .ausgabe__header__button:first-of-type:hover {
-  box-shadow: 0 0 0.5rem var(--hintergrund);
+  box-shadow: 0 0 0.5rem var(--text);
 }
 
 .ausgabe__inhalt {
   margin: 0;
-  color: var(--text);
 }
 
 .ausgabe__inhalt__ueberschrift {
@@ -1221,7 +1187,7 @@ figure figcaption {
 }
 
 .ausgabe__inhalt__inhaltsverzeichnis ul a {
-  color: var(--text);
+  text-decoration: underline;
 }
 
 .wpcf7 {

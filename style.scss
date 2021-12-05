@@ -3,7 +3,7 @@ Theme Name: GymWue Times
 Author: Constantin Birken
 Author URI: https://gymwuetimes.de/author/constantin
 Description: Das offizielle WordPress-Theme für die Schülerzeitung des Gymnasiums der Stadt Würselen.
-Version: 1.1.7
+Version: 2.0.0
 Tags: Schülerzeitung, Aktuelles, Blog, Raster
 GitHub Theme URI: cbcode1/gymwuetimes-wp
 */
@@ -49,6 +49,7 @@ body {
 
 a {
     color: var(--text);
+    text-decoration: none;
 }
 pre, code {
     font-family: monospace;
@@ -57,7 +58,6 @@ figure {
     margin: 0;
 
     figcaption {
-        color: var(--text);
         font-size: 0.8rem;
         text-align: center;
         margin: 0;
@@ -92,7 +92,6 @@ figure {
         font-size: 1.1rem;
         padding: 0.75rem;
         transition: position 0.2s;
-        color: var(--text);
 
         i {
             transition: transform 0.2s;
@@ -168,7 +167,6 @@ figure {
             a {
                 display: block;
                 padding: 20px calc(1rem + 22px);
-                color: var(--text);
                 text-decoration: none;
 
                 &:hover {
@@ -274,7 +272,6 @@ figure {
         display: inline-block;
         border: 2px solid var(--grau);
         margin: 0 1rem 1rem 0;
-        color: var(--text);
         transition: 0.2s;
 
         &:hover {
@@ -316,7 +313,6 @@ figure {
     
     &__link {
         text-decoration: none;
-        color: var(--text);
     }
 
     &__kasten {
@@ -472,7 +468,6 @@ figure {
         text-align: center;
         font-size: 2.5rem;
         margin: 0 0 2rem 0;
-        color: var(--text);
     }
 
     &__foto {
@@ -488,7 +483,6 @@ figure {
         background-repeat: no-repeat;
 
         &__bildnachweis {
-            color: var(--text);
             font-size: 0.8rem;
             text-align: center;
             margin: 0.5rem 0 0 0;
@@ -503,7 +497,6 @@ figure {
 
     &__content {
         line-height: 1.75;
-        color: var(--text);
         flex: 75%;
 
         &__autor {
@@ -602,30 +595,31 @@ figure {
     }
 
     &-button {
-        margin: 0 1rem 1rem 0;
+        margin: 0 !important;
 
         &__link, .wp-block-file__button {
             background-color: var(--akzent);
+            color: var(--text);
             border: 2px solid var(--akzent) !important;
             border-radius: 0;
-            padding: 0.75rem 1.5rem;
-            color: var(--text);
+            padding: 0.75rem 1.5rem !important;
             transition: 0.2s;
             font-size: 1rem;
+            margin: 0 1rem 1rem 0;
 
             &:hover {
                 box-shadow: 0 0 0.5rem var(--akzent);
                 transform: translateY(-0.25vh);
                 color: var(--text);
             }
-    
-            &:active {
-                background-color: var(--akzent);
-            }
         }
 
         &.is-style-outline .wp-block-button__link {
             background: none;
+    
+            &:active {
+                background-color: var(--akzent);
+            }
         }
     }
 
@@ -682,7 +676,6 @@ figure {
 
 .kommentare {
     display: block;
-    color: var(--text);
     position: relative;
     padding-top: 2rem;
 
@@ -755,11 +748,9 @@ figure {
         .fn {
             font-style: normal;
             font-weight: bold;
-            color: var(--text);
 
             .url {
                 text-decoration: none;
-                color: var(--text);
                 transition: 0.2s;
 
                 &:hover {
@@ -778,7 +769,6 @@ figure {
 
         a {
             text-decoration: none;
-            color: var(--text);
             font-size: 0.8rem;
             margin: 0;
         }
@@ -788,10 +778,6 @@ figure {
         p {
             margin: 0 0 0.5rem 0;
             line-height: 1.6;
-        }
-
-        a {
-            color: var(--text);
         }
     }
 
@@ -812,22 +798,13 @@ figure {
 
     .comment-reply-title {
         font-size: 1.25rem;
-
-        a {
-            color: var(--text);
-        }
     }
 
     .logged-in-as {
         margin: 0;
 
-        a {
-            color: var(--text);
-            text-decoration: none;
-
-            &:last-of-type {
-                text-decoration: underline;
-            }
+        a:last-of-type {
+            text-decoration: underline;
         }
     }
 
@@ -938,13 +915,11 @@ figure {
 
     &__name {
         margin: 0;
-        color: var(--text);
         font-size: 2rem;
     }
     
     &__beschreibung {
         margin: 0 0 1rem 0;
-        color: var(--text);
     }
 }
 
@@ -958,12 +933,10 @@ figure {
 
     &__ueberschrift {
         font-size: 4rem;
-        color: var(--text);
         margin: 0;
     }
 
     &__beschreibung {
-        color: var(--text);
         margin: 0;
         text-align: center;
     }
@@ -972,12 +945,10 @@ figure {
 .suche {
     &__suchbegriff {
         margin: 0 0 0.25rem 0;
-        color: var(--text);
     }
 
     &__anzahl-ergebnisse {
         margin: 0 0 2rem 0;
-        color: var(--text);
     }
 }
 
@@ -1003,7 +974,6 @@ figure {
 
         &__ueberschrift {
             margin: 2rem 0 0 calc(1rem + 22px);
-            color: var(--text);
         }
         
         ~ .artikelliste {
@@ -1042,7 +1012,6 @@ figure {
     padding: 0;
     margin: 0 auto;
     max-width: 800px;
-    color: var(--text);
 
     * {
         margin: 0;
@@ -1152,7 +1121,6 @@ figure {
         display: flex;
         justify-content: center !important;
         align-items: center !important;
-        color: var(--text);
         position: relative;
         margin: -2rem -4rem 1rem -4rem;
         padding: 2rem 4rem 2rem 4rem;
@@ -1195,18 +1163,17 @@ figure {
         &__datum {
             margin: 0;
             font-weight: bold;
-            color: var(--text);
             font-size: 1.1rem;
             line-height: 1;
         }
 
         &__button {
             &:first-of-type {
-                background-color: var(--hintergrund);
-                border: 2px solid var(--hintergrund);
+                background-color: var(--text);
+                color: var(--hintergrund);
 
                 &:hover {                
-                    box-shadow: 0 0 0.5rem var(--hintergrund);
+                    box-shadow: 0 0 0.5rem var(--text);
                 }
             }
 
@@ -1216,7 +1183,6 @@ figure {
 
     &__inhalt {
         margin: 0;
-        color: var(--text);
 
         &__ueberschrift {
             font-size: 2rem;
@@ -1236,7 +1202,7 @@ figure {
                 line-height: 1.5;
 
                 a {
-                    color: var(--text);
+                    text-decoration: underline;
                 }
             }
         }
