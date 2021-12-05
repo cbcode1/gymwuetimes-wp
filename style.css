@@ -273,32 +273,25 @@ figure figcaption {
 
 .ressorts li {
   display: inline-block;
-  border: 2px solid var(--grau);
+  background-color: var(--dezent);
+  border-radius: 100vh;
   margin: 0 1rem 1rem 0;
   transition: 0.2s;
 }
 
-.ressorts li:hover {
-  border-color: var(--akzent);
-  box-shadow: 0 0 0.5rem var(--akzent);
-  transform: translateY(-0.25vh);
-}
-
-.ressorts li:active {
+.ressorts li:hover, .ressorts li:active {
   background-color: var(--akzent);
 }
 
 .ressorts li.current-cat {
   background-color: var(--akzent);
-  border-color: var(--akzent);
-  box-shadow: 0 0 0.5rem var(--akzent);
+  box-shadow: 0 0 1rem var(--akzent);
 }
 
 .ressorts li a {
-  text-decoration: none;
   color: inherit;
   display: block;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1.75rem;
   white-space: nowrap;
 }
 
