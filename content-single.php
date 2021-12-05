@@ -14,7 +14,7 @@
                 <?php if ( get_field("anderer_autor") ) {
                     the_field("anderer_autor");
                 } else {
-                    the_author();
+                    the_author_posts_link();
                 } ?>
             </p>
         </div>
