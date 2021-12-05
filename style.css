@@ -311,8 +311,9 @@ figure figcaption {
 }
 
 .artikelliste__kasten {
-  box-shadow: 0 0 0.75rem var(--schatten);
-  background-color: var(--hintergrund);
+  background-color: var(--dezenter);
+  border-radius: 1rem;
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1.75rem auto 1.75rem;
   grid-template-areas: "foto foto foto" ". inhalt .";
@@ -321,10 +322,6 @@ figure figcaption {
   height: 100%;
   padding-bottom: 3.4rem;
   transition: background-color 0.2s, box-shadow 0.2s;
-}
-
-.artikelliste__kasten:hover, .artikelliste__kasten:active {
-  box-shadow: 0 0 1.5rem var(--schatten);
 }
 
 .artikelliste__kasten:hover i, .artikelliste__kasten:active i {

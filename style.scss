@@ -309,8 +309,9 @@ figure {
     }
 
     &__kasten {
-        box-shadow: 0 0 0.75rem var(--schatten);
-        background-color: var(--hintergrund);
+        background-color: var(--dezenter);
+        border-radius: 1rem;
+        overflow: hidden;
     
         display: grid;
         grid-template-columns: 1.75rem auto 1.75rem;
@@ -325,8 +326,6 @@ figure {
         transition: background-color 0.2s, box-shadow 0.2s;
 
         &:hover, &:active {
-            box-shadow: 0 0 1.5rem var(--schatten);
-
             i {
                 transform: translateX(5px);
             }
