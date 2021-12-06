@@ -131,8 +131,8 @@ figure figcaption {
   width: calc(100% - 2rem);
   margin: 0 1rem;
   border-radius: 200vh;
-  transition: border 0.2s ease-in-out;
-  background-color: var(--dezenter);
+  transition: background-color 0.2s ease-in-out;
+  background-color: var(--suche);
   overflow: hidden;
 }
 
@@ -152,7 +152,7 @@ figure figcaption {
 }
 
 .seitenleiste__suche:focus-within {
-  border-color: var(--text);
+  background-color: var(--suche-aktiv);
 }
 
 .seitenleiste__suche__button {

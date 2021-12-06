@@ -122,9 +122,8 @@ figure {
         width: calc(100% - 2rem);
         margin: 0 1rem;
         border-radius: 200vh;
-        //border: 2px solid var(--grau);
-        transition: border 0.2s ease-in-out;
-        background-color: var(--dezenter);
+        transition: background-color 0.2s ease-in-out;
+        background-color: var(--suche);
         overflow: hidden;
  
         &__suchfeld {
@@ -143,7 +142,7 @@ figure {
         }
 
         &:focus-within {
-            border-color: var(--text);
+            background-color: var(--suche-aktiv);
         }
 
         &__button {

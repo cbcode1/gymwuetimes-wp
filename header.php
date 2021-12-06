@@ -12,6 +12,8 @@
             --dezent: #ddd;
             --dezenter: #eee;
             --grau: #777;
+            --suche: #eee;
+            --suche-aktiv: #fff;
         }
         .farbmodus--dunkel {
             --akzent: <?php echo get_theme_mod('gymwuetimes_farben_akzent_dunkel', '#5ba44f'); ?>;
@@ -21,6 +23,8 @@
             --dezent: #222;
             --dezenter: #222;
             --grau: #888;
+            --suche: #333;
+            --suche-aktiv: #444;
         }
     </style>
     <?php wp_head(); ?>
