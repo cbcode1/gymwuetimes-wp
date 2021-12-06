@@ -70,8 +70,7 @@ figure {
     height: 100%;
     position: fixed;
     top: 0; left: 0; bottom: 0;
-    box-shadow: 0 0 25px var(--schatten);
-    background-color: var(--hintergrund);
+    background-color: var(--dezent);
     overflow: auto;
     z-index: 10;
     transition: left 0.5s;
