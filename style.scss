@@ -285,6 +285,10 @@ figure {
         border-radius: 0.5rem;
     }
 
+    &__text {
+        align-self: center;
+    }
+
     *::selection {
         background-color: var(--hintergrund);
     }
@@ -1107,7 +1111,7 @@ figure {
     &__buttons {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: -1rem;
+        gap: 1rem;
     }
 
     &__button {
@@ -1115,14 +1119,12 @@ figure {
         color: var(--text);
         text-decoration: none;
         padding: 0.75rem 1.5rem;
-        margin: 0 1rem 1rem 0;
-        border: 2px solid var(--akzent);
+        border-radius: 100vh;
         transition: 0.2s;
-        background: none;
+        background-color: var(--dezenter);
 
         &:hover {
-            box-shadow: 0 0 0.5rem var(--akzent);
-            transform: translateY(-0.25vh);
+            background-color: var(--akzent);
         }
 
         &:active {
