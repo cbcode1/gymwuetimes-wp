@@ -31,7 +31,7 @@ body {
 
 * {
   box-sizing: border-box;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, color 0.1s;
   scroll-behavior: smooth;
 }
 
@@ -131,8 +131,9 @@ figure figcaption {
   width: calc(100% - 2rem);
   margin: 0 1rem;
   border-radius: 200vh;
-  border: 2px solid var(--grau);
   transition: border 0.2s ease-in-out;
+  background-color: var(--dezenter);
+  overflow: hidden;
 }
 
 .seitenleiste__suche__suchfeld {
@@ -265,16 +266,39 @@ figure figcaption {
   margin: 2rem 4rem;
 }
 
+.banner {
+  border-radius: 1rem;
+  background-color: var(--akzent);
+  margin-bottom: 1.9rem;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.banner img {
+  height: 15rem;
+  border-radius: 0.5rem;
+}
+
+.banner *::selection {
+  background-color: var(--hintergrund);
+}
+
 .ressorts {
   list-style-type: none;
   padding: 0;
+  font-size: 0.9rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.9rem;
 }
 
 .ressorts li {
   display: inline-block;
   background-color: var(--dezent);
   border-radius: 100vh;
-  margin: 0 1rem 1rem 0;
+  margin: 0;
   transition: 0.2s;
 }
 
