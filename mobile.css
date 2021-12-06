@@ -184,15 +184,12 @@
         overflow-x: auto;
         display: flex;
         scroll-snap-type: x mandatory;
-        margin-top: 0;
-        margin-bottom: 0;
     }
     .ressorts a {
         height: 3rem;
     }
     .ressorts li {
         scroll-snap-align: start;
-        margin-bottom: 0.5rem;
     }
     .ressorts li:hover {
         transform: none;

@@ -275,6 +275,16 @@ figure figcaption {
   gap: 2rem;
 }
 
+@media screen and (max-width: 500px) {
+  .banner {
+    display: block;
+  }
+  .banner img {
+    width: 100%;
+    height: auto !important;
+  }
+}
+
 .banner img {
   height: 15rem;
   border-radius: 0.5rem;
