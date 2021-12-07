@@ -33,6 +33,7 @@ body {
   box-sizing: border-box;
   transition: background-color 0.2s, color 0.1s;
   scroll-behavior: smooth;
+  margin: 0;
 }
 
 ::selection {
@@ -166,6 +167,7 @@ figure figcaption {
 
 .seitenleiste__nav {
   width: 100%;
+  margin-top: 1rem;
 }
 
 .seitenleiste__nav__liste {
@@ -1083,10 +1085,14 @@ figure figcaption {
 
 .ausgabenliste__datum {
   font-weight: bold;
-  color: var(--grau);
+  background-color: var(--dezent);
+  display: block;
+  width: fit-content;
   font-size: 1rem;
-  margin: 0.5rem 0 0 0;
+  padding: 0.5rem 1rem;
+  border-radius: 100vh;
   line-height: 1;
+  margin-bottom: 1rem;
 }
 
 .ausgabenliste__beschreibung {
@@ -1111,7 +1117,8 @@ figure figcaption {
 }
 
 .ausgabenliste__button:hover {
-  background-color: var(--akzent);
+  background-color: var(--kontrast) !important;
+  color: var(--hintergrund);
 }
 
 .ausgabenliste__button:active {
@@ -1131,8 +1138,8 @@ figure figcaption {
   justify-content: center !important;
   align-items: center !important;
   position: relative;
-  margin: -2rem -4rem 1rem -4rem;
-  padding: 2rem 4rem 2rem 4rem;
+  padding: 3rem;
+  border-radius: 1rem;
   background-color: var(--akzent);
 }
 
@@ -1143,6 +1150,7 @@ figure figcaption {
 .ausgabe__header__cover {
   max-height: 30rem;
   justify-self: center;
+  border-radius: 0.5rem;
 }
 
 .ausgabe__header__inhalt {
@@ -1155,7 +1163,7 @@ figure figcaption {
 .ausgabe__header__titel {
   font-size: 3rem;
   line-height: 1;
-  margin: 0.5rem 0 0 0;
+  margin: 1rem 0;
 }
 
 .ausgabe__header__beschreibung {
@@ -1171,14 +1179,12 @@ figure figcaption {
 }
 
 .ausgabe__header__datum {
-  margin: 0;
-  font-weight: bold;
-  font-size: 1.1rem;
   line-height: 1;
-}
-
-.ausgabe__header__button {
-  border: 2px solid var(--text);
+  background-color: var(--dezenter);
+  padding: 0.5rem 1rem;
+  border-radius: 100vh;
+  display: block;
+  width: fit-content;
 }
 
 .ausgabe__header__button:first-of-type {
@@ -1186,12 +1192,8 @@ figure figcaption {
   color: var(--hintergrund);
 }
 
-.ausgabe__header__button:first-of-type:hover {
-  box-shadow: 0 0 0.5rem var(--text);
-}
-
 .ausgabe__inhalt {
-  margin: 0;
+  margin-top: 2rem;
 }
 
 .ausgabe__inhalt__ueberschrift {

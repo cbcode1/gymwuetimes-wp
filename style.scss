@@ -33,6 +33,7 @@ body {
     box-sizing: border-box;
     transition: background-color 0.2s, color 0.1s;
     scroll-behavior: smooth;
+    margin: 0;
 }
 ::selection {
     background-color: var(--akzent);
@@ -158,6 +159,7 @@ figure {
 
     &__nav {
         width: 100%;
+        margin-top: 1rem;
 
         &__liste {
             list-style-type: none;
@@ -1097,10 +1099,14 @@ figure {
 
     &__datum {
         font-weight: bold;
-        color: var(--grau);
+        background-color: var(--dezent);
+        display: block;
+        width: fit-content;
         font-size: 1rem;
-        margin: 0.5rem 0 0 0;
+        padding: 0.5rem 1rem;
+        border-radius: 100vh;
         line-height: 1;
+        margin-bottom: 1rem;
     }
 
     &__beschreibung {
@@ -1124,7 +1130,8 @@ figure {
         background-color: var(--dezenter);
 
         &:hover {
-            background-color: var(--akzent);
+            background-color: var(--kontrast) !important;
+            color: var(--hintergrund);
         }
 
         &:active {
@@ -1147,8 +1154,8 @@ figure {
         justify-content: center !important;
         align-items: center !important;
         position: relative;
-        margin: -2rem -4rem 1rem -4rem;
-        padding: 2rem 4rem 2rem 4rem;
+        padding: 3rem;
+        border-radius: 1rem;
         background-color: var(--akzent);
 
         & *::selection {
@@ -1158,6 +1165,7 @@ figure {
         &__cover {
             max-height: 30rem;
             justify-self: center;
+            border-radius: 0.5rem;
         }
 
         &__inhalt {
@@ -1170,7 +1178,7 @@ figure {
         &__titel {
             font-size: 3rem;
             line-height: 1;
-            margin: 0.5rem 0 0 0;
+            margin: 1rem 0;
         }
 
         &__beschreibung {
@@ -1186,28 +1194,24 @@ figure {
         }
 
         &__datum {
-            margin: 0;
-            font-weight: bold;
-            font-size: 1.1rem;
             line-height: 1;
+            background-color: var(--dezenter);
+            padding: 0.5rem 1rem;
+            border-radius: 100vh;
+            display: block;
+            width: fit-content;
         }
 
         &__button {
             &:first-of-type {
                 background-color: var(--text);
                 color: var(--hintergrund);
-
-                &:hover {                
-                    box-shadow: 0 0 0.5rem var(--text);
-                }
             }
-
-            border: 2px solid var(--text);
         }
     }
 
     &__inhalt {
-        margin: 0;
+        margin-top: 2rem;
 
         &__ueberschrift {
             font-size: 2rem;

@@ -10,7 +10,7 @@
                         <p class="ausgabe__header__datum">
                             <?php the_date( 'F Y' ) ?>
                         </p>
-                        <h2 class="ausgabe__header__titel"><?php the_title(); ?></h2>
+                        <h1 class="ausgabe__header__titel"><?php the_title(); ?></h2>
                         <div class="ausgabe__header__beschreibung">
                             <?php the_content(); ?>
                         </div>
@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="ausgabe__inhalt">
-                    <h3 class="ausgabe__inhalt__ueberschrift">Inhaltsverzeichnis</h3>
+                    <h2 class="ausgabe__inhalt__ueberschrift">Inhaltsverzeichnis</h3>
                     <div class="ausgabe__inhalt__inhaltsverzeichnis">
                         <?php the_field("inhaltsverzeichnis"); ?>
                     </div>

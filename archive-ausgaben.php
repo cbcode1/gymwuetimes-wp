@@ -15,12 +15,12 @@
                             <img src="<?php the_post_thumbnail_url(); ?>" class="ausgabenliste__cover" alt="Cover von <?php the_title(); ?>" title="Cover von <?php the_title(); ?>">
                         </a>
                         <div class="ausgabenliste__inhalt">
-                            <h2 class="ausgabenliste__ueberschrift">
-                                <?php the_title(); ?>
-                            </h2>
                             <p class="ausgabenliste__datum">
                                 <?php the_date( 'F Y' ) ?>
                             </p>
+                            <h2 class="ausgabenliste__ueberschrift">
+                                <?php the_title(); ?>
+                            </h2>
                             <div class="ausgabenliste__beschreibung">
                                 <?php the_content(); ?>
                             </div>

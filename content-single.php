@@ -1,5 +1,5 @@
 <article class="artikel">
-    <h2 class="artikel__ueberschrift"><?php the_title(); ?></h2>
+    <h1 class="artikel__ueberschrift"><?php the_title(); ?></h2>
     <?php if ( has_post_thumbnail() ) { ?>
         <div class="artikel__foto__div">
             <img src="<?php the_post_thumbnail_url() ?>" class="artikel__foto">

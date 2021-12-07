@@ -6,6 +6,7 @@
     <style>
         .farbmodus--hell {
             --akzent: <?php echo get_theme_mod('gymwuetimes_farben_akzent_hell', '#f1c85c'); ?>;
+            --kontrast: <?php echo get_theme_mod('gymwuetimes_farben_akzent_dunkel', '#5ba44f'); ?>;
             --hintergrund: white;
             --text: black;
             --schatten: gray;
@@ -17,6 +18,7 @@
         }
         .farbmodus--dunkel {
             --akzent: <?php echo get_theme_mod('gymwuetimes_farben_akzent_dunkel', '#5ba44f'); ?>;
+            --kontrast: <?php echo get_theme_mod('gymwuetimes_farben_akzent_hell', '#f1c85c'); ?>;
             --hintergrund: #181818;
             --text: white;
             --schatten: black;
