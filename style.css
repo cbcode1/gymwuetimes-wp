@@ -253,6 +253,9 @@ figure figcaption {
     width: 100%;
     height: auto !important;
   }
+  .banner__ueberschrift {
+    margin-top: 1rem;
+  }
 }
 .banner img {
   height: 15rem;
@@ -260,6 +263,9 @@ figure figcaption {
 }
 .banner__text {
   align-self: center;
+}
+.banner__ueberschrift {
+  margin-bottom: 0.75rem;
 }
 .banner *::selection {
   background-color: var(--hintergrund);
@@ -650,6 +656,7 @@ figure figcaption {
 .kommentare .comment-author {
   display: flex;
   align-items: center;
+  margin: 0.5rem 0;
 }
 .kommentare .comment-author .avatar {
   margin: 0 0.5rem 0 0;

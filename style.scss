@@ -280,6 +280,10 @@ figure {
             width: 100%;
             height: auto !important;
         }
+
+        &__ueberschrift {
+            margin-top: 1rem;
+        }
     }
 
     img {
@@ -289,6 +293,10 @@ figure {
 
     &__text {
         align-self: center;
+    }
+
+    &__ueberschrift {
+        margin-bottom: 0.75rem;
     }
 
     *::selection {
@@ -768,6 +776,7 @@ figure {
     .comment-author {
         display: flex;
         align-items: center;
+        margin: 0.5rem 0;
 
         .avatar {
             margin: 0 0.5rem 0 0;
