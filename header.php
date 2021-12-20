@@ -43,7 +43,7 @@
     <div class="seitenleiste seitenleiste--versteckt">
         <!-- <button class="seitenleiste__umschalten" onclick="seitenleisteEinfahren()"><i class="fas fa-chevron-left"></i></button> -->
         <a href="<?php echo get_bloginfo( 'wpurl' );?>" class="seitenleiste__start-link">
-            <img src="<?php echo get_bloginfo('template_directory'); ?>/logo.webp" class="seitenleiste__logo"
+            <img src="<?php echo get_bloginfo('template_directory'); ?>/logo.svg" class="seitenleiste__logo"
             alt="<?php echo get_bloginfo( 'name' ); ?>: <?php echo get_bloginfo( 'description' ); ?>" 
             title="<?php echo get_bloginfo( 'name' ); ?>: <?php echo get_bloginfo( 'description' ); ?>"
             height="130px">
@@ -84,7 +84,7 @@
         <div class="inhalt__mobil-header mobile-only">
             <!-- Logo mobil -->
             <a href="<?php echo get_bloginfo( 'wpurl' );?>">
-                <img src="<?php echo get_bloginfo('template_directory'); ?>/logo.webp" class="seitenleiste__logo"
+                <img src="<?php echo get_bloginfo('template_directory'); ?>/logo.svg" class="seitenleiste__logo"
                 alt="<?php echo get_bloginfo( 'name' ); ?>: <?php echo get_bloginfo( 'description' ); ?>" 
                 title="<?php echo get_bloginfo( 'name' ); ?>: <?php echo get_bloginfo( 'description' ); ?>">
             </a>
