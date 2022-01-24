@@ -17,7 +17,7 @@
                 <a href="/author/<?php the_author_meta("nickname", $author->ID) ?>" class="artikelliste__link">
                     <div class="artikelliste__kasten">
                         <div class="artikelliste__div">
-                            <?php $author::get_avatar() ?>
+                            <?php $author->get_avatar() ?>
                             <h2 class="artikelliste__ueberschrift"><?php the_author_meta("display_name", $author->ID) ?></h2>
                             <div class="artikelliste__vorschau">                                
                                 <?php the_author_meta("description", $author->ID); ?>
