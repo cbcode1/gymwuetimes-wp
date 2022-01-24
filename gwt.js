@@ -1,16 +1,18 @@
 // Farbmodus konfigurieren
 function farbmodusWechseln() {
+    const logo = document.querySelector(".seitenleiste__logo");
+
     if (farbmodus == "hell") {
         body.classList.replace("farbmodus--hell", "farbmodus--dunkel");
+        logo.setAttribute("src", logo.getAttribute("src").replace("logo", "logo-dark"));
         farbmodus = "dunkel";
     } else {
         body.classList.replace("farbmodus--dunkel", "farbmodus--hell");
+        logo.setAttribute("src", logo.getAttribute("src").replace("-dark", ""));
         farbmodus = "hell";
     }
     localStorage.farbmodus = farbmodus;
 }
-
-console.log("Hallo Welt");
 
 // Mobile Ansicht Seitenleiste
 function seitenleisteZeigen() {
