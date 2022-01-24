@@ -11,7 +11,7 @@
         <h2>Redaktion</h2>
         <ul class="artikelliste">
 
-            <?php $authors = get_users();
+            <?php $authors = get_multiple_authors();
             foreach($authors as $author) { ?>
 
                 <a href="/author/<?php the_author_meta("nickname", $author->ID) ?>" class="artikelliste__link">
