@@ -9,13 +9,11 @@ function gymwuetimes_css_js() {
 }
 add_action( 'wp_enqueue_scripts', 'gymwuetimes_css_js' );
 
-function gymwuetimes_google_fonts() {
-    wp_register_style( 'google-font-1', get_theme_mod('gymwuetimes_schriftart_link_1', 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap') );
-	wp_enqueue_style( 'google-font-1' );
-    wp_register_style( 'google-font-2', get_theme_mod('gymwuetimes_schriftart_link_2', 'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap' ) );
-	wp_enqueue_style( 'google-font-2' );
+function gymwuetimes_fonts() {
+    wp_register_style( 'fonts', get_theme_mod('gymwuetimes_schriftart_link', get_template_directory_uri() . '/fonts.css') );
+	wp_enqueue_style( 'fonts' );
 }
-add_action('wp_print_styles', 'gymwuetimes_google_fonts');
+add_action('wp_print_styles', 'gymwuetimes_fonts');
 
 // WordPress Titel
 add_theme_support( 'title-tag' );
@@ -109,20 +107,11 @@ function gymwuetimes_customize_register( $wp_customize ) {
         'priority'   => 31,
     ) );
 
-    $wp_customize->add_setting( 'gymwuetimes_schriftart_link_1' );
+    $wp_customize->add_setting( 'gymwuetimes_schriftart_link' );
 
-    $wp_customize->add_setting( 'gymwuetimes_schriftart_link_2' );
-
-    $wp_customize->add_control( 'gymwuetimes_schriftart_link_1', array(
-        'label'      => __( 'Einbettungs-Link: Schriftart Überschriften', 'gymwuetimes' ),
-        'description' => __( '<b>Wichtig:</b> In diesem Feld muss ein Link von <a href="https://fonts.google.com">Google Fonts</a> eingefügt werden, der auf die Schriftart verweist.<br>Falls etwas schief gehen sollte, bitte den Inhalt der Box löschen, um sie zurückzusetzen.' ),
-        'section'    => 'gymwuetimes_schriftarten',
-        'type'       => 'textarea',
-    ) );
-
-    $wp_customize->add_control( 'gymwuetimes_schriftart_link_2', array(
-        'label'      => __( 'Einbettungs-Link: Schriftart Text', 'gymwuetimes' ),
-        'description' => __( '<b>Wichtig:</b> In diesem Feld muss ein Link von <a href="https://fonts.google.com">Google Fonts</a> eingefügt werden, der auf die Schriftart verweist.<br>Falls etwas schief gehen sollte, bitte den Inhalt der Box löschen, um sie zurückzusetzen.' ),
+    $wp_customize->add_control( 'gymwuetimes_schriftart_link', array(
+        'label'      => __( 'Einbettungs-Link: Schriftarten', 'gymwuetimes' ),
+        'description' => __( '<b>Wichtig:</b> In diesem Feld muss ein Link eingefügt werden, der auf die Schriftarten verweist.<br>Falls etwas schief gehen sollte, bitte den Inhalt der Box löschen, um sie zurückzusetzen.' ),
         'section'    => 'gymwuetimes_schriftarten',
         'type'       => 'textarea',
     ) );
