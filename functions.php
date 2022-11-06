@@ -12,6 +12,8 @@ add_action( 'wp_enqueue_scripts', 'gymwuetimes_css_js' );
 function gymwuetimes_fonts() {
     wp_register_style( 'fonts', get_theme_mod('gymwuetimes_schriftart_link', get_template_directory_uri() . '/fonts.css') );
 	wp_enqueue_style( 'fonts' );
+    wp_register_style( 'icons', get_template_directory_uri() . '/icons/css/all.min.css');
+    wp_enqueue_style( 'icons' );
 }
 add_action('wp_print_styles', 'gymwuetimes_fonts');
 
